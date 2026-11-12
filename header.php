@@ -186,7 +186,7 @@
 								<ul class="mega-menu">
 									<li><a href="javascript:;">Pages</a>
 										<ul>
-											<li><a href="about-1.html"><span>About Us Simple</span></a></li>
+											<li><a href="about-1.html"><span>thanks About Us Simple</span></a></li>
 											<li><a href="about-2.html"><span>About Us Classic</span></a></li>
 											<li><a href="about-3.html"><span>About Us Modern</span></a></li>
 											<li><a href="awards.html"><span>Awards</span></a></li>
