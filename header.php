@@ -204,7 +204,7 @@
 											<li><a href="services-details.html"><span>Services Details</span></a></li>
 										</ul>
 									</li>
-									<li><a href="javascript:;">Pages</a>
+									<li><a href="javascript:;">Pageswww</a>
 										<ul>
 											<li><a href="case-study.html"><span>Case study</span></a></li>
 											<li><a href="case-details.html"><span>Case Details</span></a></li>
