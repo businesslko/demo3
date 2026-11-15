@@ -18,6 +18,11 @@ if ($categoryName !== '') {
     http_response_code(404);
 }
 
+if (count($sectionStories) > 0) {
+    $preloadImage = $sectionStories[0]['image'];
+    $preloadImageSizes = '(max-width: 560px) 100vw, (max-width: 800px) 50vw, 33vw';
+}
+
 include __DIR__ . '/includes/header.php';
 ?>
 <main id="main-content" class="page-shell">
@@ -38,10 +43,10 @@ include __DIR__ . '/includes/header.php';
         </div>
         <?php if (count($sectionStories) > 0): ?>
             <div class="category-grid">
-                <?php foreach ($sectionStories as $story): ?>
+                <?php foreach ($sectionStories as $index => $story): ?>
                     <article class="story-card">
                         <a class="image-link" href="article.php?slug=<?= e($story['slug']) ?>">
-                            <img src="<?= e($story['image']) ?>" alt="<?= e($story['image_alt']) ?>" loading="lazy">
+                            <img src="<?= e(image_url($story['image'], 480)) ?>" srcset="<?= e(image_srcset($story['image'])) ?>" sizes="<?= e($preloadImageSizes) ?>" width="1200" height="706" alt="<?= e($story['image_alt']) ?>" <?= $index === 0 ? 'fetchpriority="high"' : 'loading="lazy"' ?> decoding="async">
                         </a>
                         <div class="story-card-copy">
                             <span class="category-label"><?= e($story['category']) ?></span>

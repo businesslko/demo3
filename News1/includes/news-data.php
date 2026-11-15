@@ -5,6 +5,24 @@ function e($value)
     return htmlspecialchars((string) $value, ENT_QUOTES, 'UTF-8');
 }
 
+function image_url($url, $width)
+{
+    $url = preg_replace('/([?&])w=\d+/', '$1w=' . (int) $width, $url);
+    return preg_replace('/([?&])q=\d+/', '$1q=75', $url);
+}
+
+function image_srcset($url)
+{
+    $widths = [480, 800, 1200, 1600];
+    $sources = [];
+
+    foreach ($widths as $width) {
+        $sources[] = image_url($url, $width) . ' ' . $width . 'w';
+    }
+
+    return implode(', ', $sources);
+}
+
 $categories = [
     'world' => 'World',
     'business' => 'Business',

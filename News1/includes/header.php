@@ -1,3 +1,11 @@
+<?php
+$requestMethod = isset($_SERVER['REQUEST_METHOD']) ? $_SERVER['REQUEST_METHOD'] : 'GET';
+if ($requestMethod !== 'GET' || http_response_code() === 404) {
+    header('Cache-Control: no-store');
+} else {
+    header('Cache-Control: public, max-age=60, stale-while-revalidate=300');
+}
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -5,6 +13,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Clear, independent reporting and the latest stories from around the world.">
     <title><?= e(isset($pageTitle) ? $pageTitle . ' | ' : '') ?>The Daily Brief</title>
+    <?php if (isset($preloadImage, $preloadImageSizes)): ?>
+        <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+        <link rel="preload" as="image" href="<?= e(image_url($preloadImage, 800)) ?>" imagesrcset="<?= e(image_srcset($preloadImage)) ?>" imagesizes="<?= e($preloadImageSizes) ?>" fetchpriority="high">
+    <?php endif; ?>
     <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>

@@ -7,6 +7,9 @@ $pageTitle = $story !== null ? $story['title'] : 'Story not found';
 
 if ($story === null) {
     http_response_code(404);
+} else {
+    $preloadImage = $story['image'];
+    $preloadImageSizes = '(max-width: 820px) 100vw, 820px';
 }
 
 include __DIR__ . '/includes/header.php';
@@ -33,7 +36,7 @@ include __DIR__ . '/includes/header.php';
                 </div>
             </header>
             <figure class="article-figure">
-                <img src="<?= e($story['image']) ?>" alt="<?= e($story['image_alt']) ?>">
+                <img src="<?= e(image_url($story['image'], 800)) ?>" srcset="<?= e(image_srcset($story['image'])) ?>" sizes="<?= e($preloadImageSizes) ?>" width="1400" height="800" alt="<?= e($story['image_alt']) ?>" fetchpriority="high" decoding="async">
                 <figcaption>Image for illustration. Photograph via Unsplash.</figcaption>
             </figure>
             <div class="article-body">

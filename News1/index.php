@@ -4,6 +4,8 @@ require_once __DIR__ . '/includes/news-data.php';
 $pageTitle = 'Latest news';
 $activePage = 'home';
 $featured = $articles['cities-rethink-public-transport'];
+$preloadImage = $featured['image'];
+$preloadImageSizes = '(max-width: 800px) 100vw, 65vw';
 $secondaryStories = [
     'small-teams-build-ai-tools' => $articles['small-teams-build-ai-tools'],
     'markets-look-to-next-quarter' => $articles['markets-look-to-next-quarter'],
@@ -28,7 +30,7 @@ include __DIR__ . '/includes/header.php';
     <section class="lead-grid" aria-label="Top stories">
         <article class="lead-story">
             <a class="image-link" href="article.php?slug=cities-rethink-public-transport">
-                <img src="<?= e($featured['image']) ?>" alt="<?= e($featured['image_alt']) ?>">
+                <img src="<?= e(image_url($featured['image'], 800)) ?>" srcset="<?= e(image_srcset($featured['image'])) ?>" sizes="<?= e($preloadImageSizes) ?>" width="1400" height="778" alt="<?= e($featured['image_alt']) ?>" fetchpriority="high" decoding="async">
             </a>
             <div class="lead-copy">
                 <a class="category-label" href="category.php?section=<?= e($featured['category_slug']) ?>"><?= e($featured['category']) ?></a>
@@ -41,7 +43,7 @@ include __DIR__ . '/includes/header.php';
             <?php foreach ($secondaryStories as $slug => $story): ?>
                 <article class="compact-story">
                     <a class="image-link" href="article.php?slug=<?= e($slug) ?>">
-                        <img src="<?= e($story['image']) ?>" alt="<?= e($story['image_alt']) ?>" loading="lazy">
+                        <img src="<?= e(image_url($story['image'], 480)) ?>" srcset="<?= e(image_srcset($story['image'])) ?>" sizes="(max-width: 560px) 100vw, (max-width: 800px) 50vw, 35vw" width="1200" height="675" alt="<?= e($story['image_alt']) ?>" decoding="async">
                     </a>
                     <div>
                         <a class="category-label" href="category.php?section=<?= e($story['category_slug']) ?>"><?= e($story['category']) ?></a>
@@ -63,7 +65,7 @@ include __DIR__ . '/includes/header.php';
                 <?php foreach ($latestStories as $slug => $story): ?>
                     <article class="story-card">
                         <a class="image-link" href="article.php?slug=<?= e($slug) ?>">
-                            <img src="<?= e($story['image']) ?>" alt="<?= e($story['image_alt']) ?>" loading="lazy">
+                            <img src="<?= e(image_url($story['image'], 480)) ?>" srcset="<?= e(image_srcset($story['image'])) ?>" sizes="(max-width: 560px) 100vw, (max-width: 800px) 50vw, 40vw" width="1200" height="706" alt="<?= e($story['image_alt']) ?>" loading="lazy" decoding="async">
                         </a>
                         <div class="story-card-copy">
                             <a class="category-label" href="category.php?section=<?= e($story['category_slug']) ?>"><?= e($story['category']) ?></a>
