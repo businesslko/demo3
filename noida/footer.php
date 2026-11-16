@@ -4,10 +4,9 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-3 md-mb-20">
-							<h3 class="footer-title">About Company</h3>
+							<h3 class="footer-title">About CoSafe</h3>
 							<div class="textwidget mb-33">
-								Lorem ipsum dolor sit amet, conse turini adipiscing elit, sed do 
-								eius mod tempor in cididunt ut labore lorem ipsum
+								Practical safety training and workplace support to help teams build awareness and safer routines.
 							</div>
 							<ul class="footer-social md-mb-30">  
                                 <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>                     
@@ -22,50 +21,42 @@
                                 <li>
                                     <i class="fi fi-rr-map-marker-home"></i>
                                     <div class="desc">
-                                    	503 Ocala Street,<br> 
-                                    	Florida, USA
+                                    	H.no- 607, Ground floor, Block A,<br>
+                                    	Palam vihar, Gurgaon, Haryana-122017
 									</div>
                                 </li>
                                 <li>
                                     <i class="fi fi-rr-phone-call"></i>
                                     <div class="desc">
-                                       <a href="tel:(+1)123-4567890">(+1) 123-456-7890</a>
+                                       <a href="tel:+919140639881">9140639881</a>
                                     </div>
                                 </li>
                                 <li>
                                     <i class="fi fi-rr-envelope-plus"></i>
                                     <div class="desc">
-                                        <a href="mailto:info@renovix.biz">info@renovix.biz</a>
+                                        <a href="mailto:sni4732@gmail.com">sni4732@gmail.com</a>
                                     </div>
                                 </li>
                             </ul>
 						</div>
 						<div class="col-lg-3 pl-75 md-pl-15 md-mb-10">
-							<h3 class="footer-title">Featured Services</h3>
+							<h3 class="footer-title">Training</h3>
 							<ul class="site-map">
-                                <li><a href="fintech-analysis.html">Fintech Analysis</a></li>
-                                <li><a href="project-reporting.html">Project Reporting</a></li>
-                                <li><a href="reports-analysis.html">Reports Analysis</a></li>
-                                <li><a href="business-analysis.html">Business Analysis</a></li>
-                                <li><a href="business-planning.html">Business Planning</a></li>
+                                <li><a href="general-safety-training.php">General Safety Training</a></li>
+                                <li><a href="industry-specific-training.php">Industry Specific Training</a></li>
+                                <li><a href="customized-training.php">Customized Training</a></li>
+                                <li><a href="mock-drills-training.php">Mock Drills Training</a></li>
+                                <li><a href="consultancy.php">Consultancy</a></li>
                             </ul>
 						</div>
 						<div class="col-lg-3">
-							<h3 class="footer-title">Recent Articles</h3>
+							<h3 class="footer-title">Safety Resources</h3>
 							<ul class="post-widget">
                                 <li class="post-item mb-30">
-                                    <div class="desc"><h3 class="title"><a href="#">How investing in dependend your business growth.</a></h3></div>
-                                    <div class="post-date"> 
-                                        <i class="fi-rr-calendar"></i>
-                                        March 23, 2022                  
-                                    </div>
+                                    <div class="desc"><h3 class="title"><a href="general-safety-training.php">Building safer everyday work habits</a></h3></div>
                                 </li>
                                 <li class="post-item">
-                                    <div class="desc"><h3 class="title"><a href="#">How to maintain customers relations disaster.</a></h3></div>
-                                    <div class="post-date"> 
-                                        <i class="fi-rr-calendar"></i>
-                                        March 23, 2022                  
-                                    </div>
+                                    <div class="desc"><h3 class="title"><a href="mock-drills-training.php">Preparing teams for emergency drills</a></h3></div>
                                 </li>
                             </ul>
 						</div>
@@ -78,15 +69,15 @@
                         <div class="col-lg-6 md-mb-10 text-lg-end text-center order-last">
                             <ul class="copy-right-menu">
                                 <li><a href="index.php">Home</a></li>
-                                <li><a href="about.html">About</a></li>
-                                <li><a href="services1.html">Services</a></li>
-                                <li><a href="blog.html">Blog</a></li>
-                                <li><a href="contact1.html">Contact</a></li>
+                                <li><a href="about.php">About Us</a></li>
+                                <li><a href="training.php">Training</a></li>
+                                <li><a href="courses.php">Courses</a></li>
+                                <li><a href="contact.php">Contact us</a></li>
                             </ul>
                         </div>
                         <div class="col-lg-6">
                             <div class="copyright text-lg-start text-center">
-                                <p>© 2024 Renovix.  Designed By <a href="https://rstheme.com/" target="blank">RSTheme</a></p>
+                                <p>© 2026 CoSafe. All rights reserved.</p>
                             </div>
                         </div>
                     </div>

@@ -5,7 +5,7 @@
 <head>
 		<!-- meta tag -->
 		<meta charset="utf-8">
-		<title>Renovix - Business Consulting HTML Template</title>
+		<title><?= isset($pageTitle) ? htmlspecialchars($pageTitle, ENT_QUOTES, 'UTF-8') . ' | ' : '' ?>CoSafe | Safety Training and Consultancy</title>
 		<meta name="description" content="">
 		<!-- responsive tag -->
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -51,7 +51,7 @@
 	   	<div id="pre-load">
             <div id="loader" class="loader">
                 <div class="loader-container">
-                    <div class="loader-icon"><img src="assets/images/fav.png" alt="Renovix - Business Consulting Html Template "></div>
+                    <div class="loader-icon"><img src="assets/images/fav.png" alt="CoSafe safety training"></div>
                 </div>
             </div>              
         </div>
@@ -73,15 +73,15 @@
 										<ul class="rs-contact-info">                   
 											<li>
 					                            <i class="fi fi-rr-envelope-plus"></i>                  
-					                            <a href="mailto:info@renovix.biz">info@renovix.biz</a>
+					                            <a href="mailto:sni4732@gmail.com">sni4732@gmail.com</a>
 					                        </li>
 	                                        <li>
                                               	<i class="fi fi-rr-phone-call"></i>                                      
-                                                <a href="tel:+14888444999"> +14888444999</a>                   
+                                                <a href="tel:+919140639881">9140639881</a>
                                             </li>
                                             <li>
                                               	<i class="fi-rr-map-marker-home"></i>                                      
-                                                503 Ocala Street, Florida, USA                 
+                                                Palam Vihar, Gurgaon, Haryana
                                             </li>
 										</ul>
 									</div>
@@ -107,9 +107,8 @@
 							<div class="row-table">
 								<div class="col-cell header-logo">                                  
 								    <div class="logo-area">
-								        <a href="index.php">
-								            <img class="normal-logo" src="assets/images/logo-dark.png" alt="logo">  
-								            <img class="sticky-logo" src="assets/images/logo-dark.png" alt="logo">
+								        <a href="index.php" aria-label="CoSafe home">
+								            <span class="brand-wordmark">CoSafe</span>
 								        </a>
 								    </div>
 								</div>
@@ -119,36 +118,36 @@
 											<nav class="rs-menu hidden-md">
 												<ul class="nav-menu">
 													<li class="current-menu-item"><a href="index.php">Home</a></li>
-													<li><a href="about.html">About Us</a></li>
+													<li><a href="about.php">About Us</a></li>
 													<li class="menu-item-has-children">
-													    <a href="#">Training</a>
+													    <a href="training.php">Training</a>
 													    <ul class="sub-menu">
-													        <li><a href="#">General Safety Training</a></li>
-													        <li><a href="#">Industry Specific Training</a></li>
-													        <li><a href="#">Customized Training</a></li>
-													        <li><a href="#">Mock Drills Training</a></li>
+													        <li><a href="general-safety-training.php">General Safety Training</a></li>
+													        <li><a href="industry-specific-training.php">Industry Specific Training</a></li>
+													        <li><a href="customized-training.php">Customized Training</a></li>
+													        <li><a href="mock-drills-training.php">Mock Drills Training</a></li>
 													    </ul>
 													</li>
 													<li class="menu-item-has-children">
-													    <a href="#">Consultancy</a>
+													    <a href="consultancy.php">Consultancy</a>
 													    <ul class="sub-menu">
-													        <li><a href="#">Expert Solutions</a></li>
-													        <li><a href="#">Audits</a></li>
-													        <li><a href="#">Specialised</a></li>
+													        <li><a href="expert-solutions.php">Expert Solutions</a></li>
+													        <li><a href="audits.php">Audits</a></li>
+													        <li><a href="specialised.php">Specialised</a></li>
 													    </ul>
 													</li>
 													<li class="menu-item-has-children">
-													    <a href="#">Courses</a>
+													    <a href="courses.php">Courses</a>
 													    <ul class="sub-menu">
-													        <li><a href="#">Trending Courses</a></li>
-													        <li><a href="#">Skill Courses</a></li>
-													        <li><a href="#">On Demand Courses</a></li>
+													        <li><a href="trending-courses.php">Trending Courses</a></li>
+													        <li><a href="skill-courses.php">Skill Courses</a></li>
+													        <li><a href="on-demand-courses.php">On Demand Courses</a></li>
 													    </ul>
 													</li>
-													<li><a href="#">Industrial Solutions</a></li>
-													<li><a href="#">Galley</a></li>
-													<li><a href="#">Carrier</a></li>
-													<li><a href="contact1.html">Contact us</a></li>
+													<li><a href="industrial-solutions.php">Industrial Solutions</a></li>
+													<li><a href="gallery.php">Gallery</a></li>
+													<li><a href="careers.php">Careers</a></li>
+													<li><a href="contact.php">Contact us</a></li>
 												</ul> <!-- //.nav-menu -->
 											</nav>
 										</div> <!-- //.main-menu -->
@@ -192,10 +191,10 @@
 					    </div>
 					    <div class="rs-offcanvas-inner">
 					        <div class="canvas-logo">
-					            <a href="index.php"><img src="assets/images/logo-dark.png" alt="logo"></a>
+					            <a href="index.php" aria-label="CoSafe home"><span class="brand-wordmark">CoSafe</span></a>
 					        </div>
 					        <div class="offcanvas-text">
-					            <p>Teknolab quisque placerat vitae lacus ut scelerisque. Fusce luctus odio ac nibh luctus, in porttitor theo lacus egestas etiusto odio data center.</p>
+					            <p>Practical safety training and workplace support for teams.</p>
 					        </div>
 					        <div class="canvas-contact">
 					            <div class="address-area">
@@ -205,7 +204,7 @@
 					                    </div>
 					                    <div class="info-content">
 					                        <h4 class="title">Address</h4>
-					                        <em>05 kandi BR. New York</em>
+					                        <em>H.no- 607, Ground floor, Block A, Palam vihar, Gurgaon, Haryana-122017</em>
 					                    </div>
 					                </div>
 					                <div class="address-list">
@@ -214,7 +213,7 @@
 					                    </div>
 					                    <div class="info-content">
 					                        <h4 class="title">Email</h4>
-					                        <em><a href="mailto:support@rstheme.com">support@rstheme.com</a></em>
+					                        <em><a href="mailto:sni4732@gmail.com">sni4732@gmail.com</a></em>
 					                    </div>
 					                 </div>
 					                <div class="address-list">
@@ -223,7 +222,7 @@
 					                    </div>
 					                    <div class="info-content">
 					                      <h4 class="title">Phone</h4>
-					                      <em>+019988772</em>
+					                      <em><a href="tel:+919140639881">9140639881</a></em>
 					                    </div>
 					                </div>
 					            </div>
@@ -250,36 +249,36 @@
 					    </div>
 					    <ul class="nav-menu">
 					    	<li class="current-menu-item"><a href="index.php">Home</a></li>
-					    	<li><a href="about.html">About</a></li>
+					    	<li><a href="about.php">About Us</a></li>
 					    	<li class="menu-item-has-children">
-					    	    <a href="#">Training</a>
+					    	    <a href="training.php">Training</a>
 					    	    <ul class="sub-menu">
-					    	        <li><a href="#">General Safety Training</a></li>
-					    	        <li><a href="#">Industry Specific Training</a></li>
-					    	        <li><a href="#">Customized Training</a></li>
-					    	        <li><a href="#">Mock Drills Training</a></li>
+					    	        <li><a href="general-safety-training.php">General Safety Training</a></li>
+					    	        <li><a href="industry-specific-training.php">Industry Specific Training</a></li>
+					    	        <li><a href="customized-training.php">Customized Training</a></li>
+					    	        <li><a href="mock-drills-training.php">Mock Drills Training</a></li>
 					    	    </ul>
 					    	</li>
 					    	<li class="menu-item-has-children">
-					    	    <a href="#">Consultancy</a>
+					    	    <a href="consultancy.php">Consultancy</a>
 					    	    <ul class="sub-menu">
-					    	        <li><a href="#">Expert Solutions</a></li>
-					    	        <li><a href="#">Audits</a></li>
-					    	        <li><a href="#">Specialised</a></li>
+					    	        <li><a href="expert-solutions.php">Expert Solutions</a></li>
+					    	        <li><a href="audits.php">Audits</a></li>
+					    	        <li><a href="specialised.php">Specialised</a></li>
 					    	    </ul>
 					    	</li>
 					    	<li class="menu-item-has-children">
-					    	    <a href="#">Courses</a>
+					    	    <a href="courses.php">Courses</a>
 					    	    <ul class="sub-menu">
-					    	        <li><a href="#">Trending Courses</a></li>
-					    	        <li><a href="#">Skill Courses</a></li>
-					    	        <li><a href="#">On Demand Courses</a></li>
+					    	        <li><a href="trending-courses.php">Trending Courses</a></li>
+					    	        <li><a href="skill-courses.php">Skill Courses</a></li>
+					    	        <li><a href="on-demand-courses.php">On Demand Courses</a></li>
 					    	    </ul>
 					    	</li>
-					    	<li><a href="#">Industrial Solutions</a></li>
-					    	<li><a href="#">Galley</a></li>
-					    	<li><a href="#">Carrier</a></li>
-					    	<li><a href="contact1.html">Contact</a></li>
+					    	<li><a href="industrial-solutions.php">Industrial Solutions</a></li>
+					    	<li><a href="gallery.php">Gallery</a></li>
+					    	<li><a href="careers.php">Careers</a></li>
+					    	<li><a href="contact.php">Contact us</a></li>
 					    </ul> <!-- //.nav-menu -->
 					    <!-- //.nav-menu -->
 					   
@@ -292,7 +291,7 @@
 					                  </div>
 					                  <div class="info-content">
 					                      <h4 class="title">Address</h4>
-					                      <em>05 kandi BR. New York</em>
+					                      <em>H.no- 607, Ground floor, Block A, Palam vihar, Gurgaon, Haryana-122017</em>
 					                  </div>
 					              </div>
 					              <div class="address-list">
@@ -301,7 +300,7 @@
 					                  </div>
 					                  <div class="info-content">
 					                      <h4 class="title">Email</h4>
-					                      <em><a href="mailto:support@rstheme.com">support@rstheme.com</a></em>
+					                      <em><a href="mailto:sni4732@gmail.com">sni4732@gmail.com</a></em>
 					                  </div>
 					              </div>
 					              <div class="address-list">
@@ -310,7 +309,7 @@
 					                  </div>
 					                  <div class="info-content">
 					                      <h4 class="title">Phone</h4>
-					                      <em>+019988772</em>
+					                      <em><a href="tel:+919140639881">9140639881</a></em>
 					                  </div>
 					              </div>
 					          </div>

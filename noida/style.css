@@ -1623,6 +1623,19 @@ blockquote p cite:before {
   transition: 0.4s;
   max-height: 40px;
 }
+.full-width-header .rs-header .menu-area .logo-area .brand-wordmark,
+.full-width-header .right_menu_togle .canvas-logo .brand-wordmark {
+  color: #101010;
+  display: inline-block;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  line-height: 1;
+}
+.full-width-header .rs-header .menu-area .logo-area .brand-wordmark {
+  transition: 0.4s;
+}
 .full-width-header .rs-header .menu-area .rs-menu-area {
   display: flex;
   align-items: center;
@@ -1640,7 +1653,7 @@ blockquote p cite:before {
   transition: all 0.3s ease;
   font-size: 16px;
   font-weight: 600;
-  margin-right: 10px;
+  margin-right: 1px;
   height: 104px;
   line-height: 104px;
   padding: 0;
