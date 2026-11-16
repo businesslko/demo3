@@ -251,7 +251,7 @@
 					    </div>
 					    <ul class="nav-menu">
 					    	<li class="current-menu-item"><a href="index.php">Home</a></li>
-					    	<li><a href="about.html">About Us</a></li>
+					    	<li><a href="about.html">About</a></li>
 					    	<li class="menu-item-has-children">
 					    	    <a href="#">Training</a>
 					    	    <ul class="sub-menu">
@@ -280,7 +280,7 @@
 					    	<li><a href="#">Industrial Solutions</a></li>
 					    	<li><a href="#">Galley</a></li>
 					    	<li><a href="#">Carrier</a></li>
-					    	<li><a href="contact1.html">Contact us</a></li>
+					    	<li><a href="contact1.html">Contact</a></li>
 					    </ul> <!-- //.nav-menu -->
 					    <!-- //.nav-menu -->
 					   
