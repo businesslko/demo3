@@ -119,7 +119,7 @@
 											<nav class="rs-menu hidden-md">
 												<ul class="nav-menu">
 													<li class="current-menu-item"><a href="index.php">Home</a></li>
-													<li><a href="about.html">About</a></li>
+													<li><a href="about.html">About Us</a></li>
 													<li class="menu-item-has-children">
 													    <a href="#">Training</a>
 													    <ul class="sub-menu">
@@ -148,7 +148,7 @@
 													<li><a href="#">Industrial Solutions</a></li>
 													<li><a href="#">Galley</a></li>
 													<li><a href="#">Carrier</a></li>
-													<li><a href="contact1.html">Contact</a></li>
+													<li><a href="contact1.html">Contact us</a></li>
 												</ul> <!-- //.nav-menu -->
 											</nav>
 										</div> <!-- //.main-menu -->
@@ -157,7 +157,6 @@
 								<div class="col-cell">
 									<div class="expand-btn-inner">
 										<ul>
-                                            <li class="btn-quote"><a class="quote-button" href="contact1.html">Get a Quote</a></li>
 											<li class="humburger">
 											    <a id="nav-expander" class="nav-expander bar" href="#">
 											        <div class="bar">
